@@ -1,8 +1,16 @@
 <img width="470.235" height="179.4" alt="isc-full-primary" src="https://github.com/user-attachments/assets/31365569-11bf-427e-ae3e-8d81ca87d765" />
 
-# IFSXX-[DPT]_[PCB/PURPOSE]
+# IFS09-ASSI
 
-Embedded firmware for the **[PCB/PURPOSE]** of the IFSXX, developed on XXXXXXXXX with XXXXXXXXX.
+Hardware design (KiCad schematic and PCB layout) for the **Autonomous System Status Indicator (ASSI)** board of the **IFS09**, developed for the **ISC Formula Student Racing Team** (Season 2026/2027).
+
+[![Formula Student](https://img.shields.io/badge/Formula%20Student-ISC-yellow.svg)](https://www.comillas.edu/)
+[![Season](https://img.shields.io/badge/Season-2026%2F2027-blue.svg)]()
+[![Hardware](https://img.shields.io/badge/EDA-KiCad%2010.x-orange.svg)]()
+[![LEDs](https://img.shields.io/badge/LEDs-15x%20Cree%20CLQ6B%20(RGBW)-green.svg)]()
+[![Supply](https://img.shields.io/badge/Supply-24V-red.svg)]()
+
+[![View Schematics](https://img.shields.io/badge/Schematics_v1.0-PDF-red?logo=adobeacrobatreader)](Schematics-1.0.pdf)
 
 ---
 
@@ -17,9 +25,11 @@ Embedded firmware for the **[PCB/PURPOSE]** of the IFSXX, developed on XXXXXXXXX
      - [Atlassian Git Tutorial](https://www.atlassian.com/git/tutorials/)
    - Keep a copy of [GitHub's Git Cheat Sheet](https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf) handy as a reference.
 
-3. Clone this repository to your machine (update these links!!):
-   - SSH: `git@github.com:isc-fs/IFSXX-[DPT]_[PCB/PURPOSE].git`
-   - HTTPS: `https://github.com/isc-fs/IFSXX-[DPT]_[PCB/PURPOSE].git`
+3. Clone this repository to your machine:
+   - SSH: `git@github.com:isc-fs/IFS09-ASSI.git`
+   - HTTPS: `https://github.com/isc-fs/IFS09-ASSI.git`
+
+4. To open the design, install [KiCad 10](https://www.kicad.org/download/) and set up the team library [IFS-KicadLib](https://github.com/isc-fs/IFS-KicadLib) (`ISC_KICAD_LIB` path variable), then open `hardware/ASSI/ASSI.kicad_pro`.
 
 ---
 
@@ -136,7 +146,8 @@ The message of your **first commit** will be used to automatically fill in the i
 When the work is ready, open a Pull Request on GitHub from your branch toward `dev`. In the PR description write `Closes #<issue-number>` so the issue closes automatically when the PR is merged.
 
 Before requesting a review, check that:
-- The code compiles with no errors or warnings
+- KiCad ERC and DRC report no errors
+- The schematic PDF and the images in `docs/images/` match the design
 - You have tested the change on the bench if applicable
 - The PR targets `dev`, not `main`
 
@@ -150,4 +161,112 @@ When `dev` holds a set of validated changes that are ready for the car, a respon
 
 ---
 
-*ISC Racing Team — IFS08 Driverless*
+## 1. Project overview
+
+The ASSI shows the state of the Autonomous System to people around the car, as required by the Formula Student rules:
+
+| AS state | ASSI |
+| :--- | :--- |
+| AS Off | Off |
+| AS Ready | Yellow, continuous |
+| AS Driving | Yellow, flashing |
+| AS Emergency | Blue, flashing |
+| AS Finished | Blue, continuous |
+
+This board is a **passive LED board**: it has no microcontroller or logic. It lights yellow or blue depending on which of its two 24 V inputs is powered, so the colour and the flashing are decided by whatever drives those two lines.
+
+```
+            +--------------------- ASSI board ---------------------+
+ IN1        |                                                      |        OUT1
+ 24V_YW ----+--> D2 --+--> R + G channels --> 3 rows x 5 LEDs --+  +---- 24V_YW
+ 24V_BL ----+--> D1 --+--> B channel -------> 3 rows x 5 LEDs --+  +---- 24V_BL
+ GND -------+---------------------------------------------------+--+---- GND
+            +------------------------------------------------------+
+```
+
+`IN1` and `OUT1` are wired pin to pin, so several ASSI boards can be daisy-chained from one harness branch.
+
+---
+
+## 2. Schematic
+
+<p align="center">
+  <a href="Schematics-1.0.pdf">
+    <img src="docs/images/schematic_v1.svg" alt="ASSI schematic v1.0" width="950"/>
+  </a>
+  <br>
+  <sub><em>Click on the preview to open the vector PDF (<a href="Schematics-1.0.pdf">Schematics-1.0.pdf</a>)</em></sub>
+</p>
+
+### 2.1 Supply inputs
+
+* **`24V_YW`** feeds the red and green LED channels together through diode `D2` (red + green = yellow).
+* **`24V_BL`** feeds the blue LED channel through diode `D1`.
+* `D1` and `D2` are 1N914BWS (SOD-323F) series diodes, one per input.
+* `C4` (yellow rail) and `C3` (blue rail) are 100 nF 0805 capacitors to GND after each diode.
+
+### 2.2 LED strings
+
+* 15 × Cree **CLQ6B** RGBW LEDs (`LED1`–`LED15`), arranged as **3 rows of 5 LEDs in series**.
+* Each row has its own 1206 series resistors per colour channel: 2 for red, 1 for green and 3 for blue (`R1`–`R18`).
+* The white die of the CLQ6B is not used.
+
+### 2.3 Connectors
+
+`IN1` and `OUT1` are Molex Micro-Fit 3.0, 3 circuits (436500300), with the same pinout:
+
+| Pin | Net | Description |
+| :---: | :--- | :--- |
+| 1 | `GND` | Ground |
+| 2 | `24V_YW` | 24 V supply for yellow |
+| 3 | `24V_BL` | 24 V supply for blue |
+
+---
+
+## 3. PCB layout
+
+<p align="center">
+  <img src="docs/images/pcb_layout_2d.svg" alt="ASSI PCB layout" width="800"/>
+</p>
+<p align="center">
+  <img src="docs/images/pcb_render_3d_top.png" alt="ASSI 3D render, top" width="800"/>
+</p>
+
+| Parameter | Value |
+| :--- | :--- |
+| Board size | 110 mm × 45 mm |
+| Layers | 2 |
+| Thickness | 1.6 mm |
+| Minimum track width | 0.2 mm |
+| Minimum drill | 0.3 mm (vias) |
+| Mounting holes | 2 × 3.05 mm, non-plated |
+| Components | 37 SMD + 2 through-hole connectors |
+
+---
+
+## 4. Bill of materials
+
+| Reference | Qty | Part | Footprint |
+| :--- | :---: | :--- | :--- |
+| `LED1`–`LED15` | 15 | Cree CLQ6B RGBW LED | `ISC_modulos_pcb:SMT_B7935BB3_WFS` |
+| `R1`–`R18` | 18 | Resistor (value TBD) | 1206 |
+| `C3`, `C4` | 2 | Capacitor, 100 nF | 0805 |
+| `D1`, `D2` | 2 | 1N914BWS diode | SOD-323F |
+| `IN1`, `OUT1` | 2 | Molex Micro-Fit 3.0, 3P (436500300) | `ISC_conectores:CONN_SD-43650-001_03_MOL` |
+
+---
+
+## 5. Repository structure
+
+```
+hardware/ASSI/             KiCad project (schematic and PCB layout)
+hardware/ASSI/production/  Fabrication output: Gerber + drill package (ASSI.zip) and IPC-D-356 netlist
+Schematics-1.0.pdf         Schematic exported to PDF
+docs/images/               Images used in this README
+```
+
+The CLQ6B symbol and footprint are not stored in this repository; they come from [IFS-KicadLib](https://github.com/isc-fs/IFS-KicadLib).
+
+---
+
+*ISC Racing Team — IFS09 Driverless*
