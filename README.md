@@ -208,7 +208,10 @@ This board is a **passive LED board**: it has no microcontroller or logic. It li
 ### 2.2 LED strings
 
 * 15 × Cree **CLQ6B** RGBW LEDs (`LED1`–`LED15`), arranged as **3 rows of 5 LEDs in series**.
-* Each row has its own 1206 series resistors per colour channel: 2 for red, 1 for green and 3 for blue (`R1`–`R18`).
+* Each row has its own 1206 series resistors per colour channel (`R1`–`R18`):
+  * Red: 2 × 300 Ω in series (`R1`+`R2`, `R7`+`R9`, `R13`+`R15`)
+  * Green: 1 × 1 kΩ (`R3`, `R10`, `R16`)
+  * Blue: 3 × 43 Ω in series (`R4`+`R5`+`R6`, `R8`+`R11`+`R12`, `R14`+`R17`+`R18`)
 * The white die of the CLQ6B is not used.
 
 ### 2.3 Connectors
@@ -249,7 +252,9 @@ This board is a **passive LED board**: it has no microcontroller or logic. It li
 | Reference | Qty | Part | Footprint |
 | :--- | :---: | :--- | :--- |
 | `LED1`–`LED15` | 15 | Cree CLQ6B RGBW LED | `ISC_modulos_pcb:SMT_B7935BB3_WFS` |
-| `R1`–`R18` | 18 | Resistor (value TBD) | 1206 |
+| `R1`, `R2`, `R7`, `R9`, `R13`, `R15` | 6 | Resistor, 300 Ω | 1206 |
+| `R3`, `R10`, `R16` | 3 | Resistor, 1 kΩ | 1206 |
+| `R4`–`R6`, `R8`, `R11`, `R12`, `R14`, `R17`, `R18` | 9 | Resistor, 43 Ω | 1206 |
 | `C3`, `C4` | 2 | Capacitor, 100 nF | 0805 |
 | `D1`, `D2` | 2 | 1N914BWS diode | SOD-323F |
 | `IN1`, `OUT1` | 2 | Molex Micro-Fit 3.0, 3P (436500300) | `ISC_conectores:CONN_SD-43650-001_03_MOL` |

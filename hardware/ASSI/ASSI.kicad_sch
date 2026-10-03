@@ -3889,9 +3889,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 142.24 130.81 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3971,9 +3970,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 132.08 58.42 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4132,9 +4130,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "300"
 			(at 132.08 53.34 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4214,9 +4211,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 142.24 97.79 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4296,9 +4292,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 132.08 97.79 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4457,9 +4452,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "300"
 			(at 132.08 120.65 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4539,9 +4533,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "300"
 			(at 132.08 87.63 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4621,7 +4614,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 64.77 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5148,9 +5141,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "300"
 			(at 121.92 87.63 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5767,9 +5759,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "300"
 			(at 121.92 120.65 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5849,9 +5840,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 132.08 130.81 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6648,9 +6638,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 132.08 63.5 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6730,9 +6719,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 121.92 97.79 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6812,9 +6800,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 132.08 125.73 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6994,9 +6981,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "1k"
 			(at 132.08 92.71 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7155,9 +7141,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "300"
 			(at 121.92 53.34 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7237,9 +7222,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 121.92 130.81 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7319,7 +7303,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "100nF"
 			(at 64.77 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7480,9 +7464,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 121.92 63.5 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7641,9 +7624,8 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "43"
 			(at 142.24 63.5 90)
-			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
