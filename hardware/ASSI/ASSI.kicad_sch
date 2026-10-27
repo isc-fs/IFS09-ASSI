@@ -1405,7 +1405,106 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "PCM_Diode_AKL:1N914BWS"
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "PCM_Diode_Schottky_AKL:PMEG4010CEH"
 			(body_styles demorgan)
 			(pin_numbers
 				(hide yes)
@@ -1429,7 +1528,7 @@
 					)
 				)
 			)
-			(property "Value" "1N914BWS"
+			(property "Value" "PMEG4010CEH"
 				(at 0 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1439,7 +1538,7 @@
 					)
 				)
 			)
-			(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-323F"
+			(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-123F"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1450,7 +1549,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://datasheet.octopart.com/1N914BWS-ON-Semiconductor-datasheet-11741836.pdf"
+			(property "Datasheet" "https://www.tme.eu/Document/6076ddfe18935c4c311aad91dddcf920/PMEG4010CEX-DTE.pdf"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1461,7 +1560,7 @@
 					)
 				)
 			)
-			(property "Description" "SOD-323F Diode, Small Signal, Fast Switching, 75V, 200mA, 4ns, Alternate KiCad Library"
+			(property "Description" "SOD-123F Schottky diode, 40V, 1A, Alternate KiCAD Library"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1472,7 +1571,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "diode 1N914BWS"
+			(property "ki_keywords" "diode Schottky PMEG4010CEH"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1494,19 +1593,7 @@
 					)
 				)
 			)
-			(symbol "1N914BWS_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27) (xy 1.27 0) (xy -1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "PMEG4010CEH_0_1"
 				(polyline
 					(pts
 						(xy -1.27 0) (xy 1.27 0)
@@ -1521,7 +1608,19 @@
 				)
 				(polyline
 					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27)
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy 1.27 0) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -0.762) (xy 1.905 -1.27) (xy 1.27 -1.27) (xy 1.27 1.27) (xy 0.635 1.27) (xy 0.635 0.762)
 					)
 					(stroke
 						(width 0.254)
@@ -1532,7 +1631,7 @@
 					)
 				)
 			)
-			(symbol "1N914BWS_0_2"
+			(symbol "PMEG4010CEH_0_2"
 				(polyline
 					(pts
 						(xy -2.54 -2.54) (xy 2.54 2.54)
@@ -1569,8 +1668,32 @@
 						(type none)
 					)
 				)
+				(polyline
+					(pts
+						(xy 0 1.778) (xy -0.381 1.397) (xy 0 1.016)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.778 0) (xy 2.159 0.381) (xy 1.778 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 			)
-			(symbol "1N914BWS_1_1"
+			(symbol "PMEG4010CEH_1_1"
 				(pin passive line
 					(at 3.81 0 180)
 					(length 2.54)
@@ -1608,7 +1731,7 @@
 					)
 				)
 			)
-			(symbol "1N914BWS_1_2"
+			(symbol "PMEG4010CEH_1_2"
 				(pin passive line
 					(at 2.54 2.54 180)
 					(length 0)
@@ -1923,6 +2046,26 @@
 		)
 		(uuid "04fc960e-51c5-46c1-a0f3-fffafe634879")
 	)
+	(text_box "M3 Mountain Holes\n"
+		(exclude_from_sim no)
+		(at 36.83 140.97 0)
+		(size 46.99 19.05)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "22af4747-bbc8-4e15-b00f-182b1f7954b5")
+	)
 	(text_box "LEDs\n"
 		(exclude_from_sim no)
 		(at 101.6 43.18 0)
@@ -1964,22 +2107,22 @@
 		(uuid "3bc36f69-80f1-4620-8844-d5c1d12bc532")
 	)
 	(junction
+		(at 60.96 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ed18fc8-05c9-447f-98a3-f329f459594d")
+	)
+	(junction
 		(at 60.96 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1943fcd8-2208-4a13-9fdb-04ae23e27857")
+		(uuid "3fb6ad9c-b2aa-42c7-865c-63bf22983534")
 	)
 	(junction
 		(at 68.58 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "493dc97e-c927-4014-9223-d767864007db")
-	)
-	(junction
-		(at 60.96 71.12)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "826c1fba-71c7-4158-ae48-3a36f83098dd")
 	)
 	(no_connect
 		(at 332.74 72.39)
@@ -2110,16 +2253,6 @@
 			(type default)
 		)
 		(uuid "0095c516-d986-4b7b-bb37-3790e0ef64f4")
-	)
-	(wire
-		(pts
-			(xy 60.96 55.88) (xy 58.42 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "011672c0-1992-4d59-b99e-4819e45f65a4")
 	)
 	(wire
 		(pts
@@ -2380,6 +2513,16 @@
 			(type default)
 		)
 		(uuid "477a2c39-4303-4f9c-bb38-c8faa65acc1a")
+	)
+	(wire
+		(pts
+			(xy 58.42 55.88) (xy 60.96 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a15cd74-8a3b-4c2e-ae45-acd2f1d9d288")
 	)
 	(wire
 		(pts
@@ -2693,6 +2836,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 71.12) (xy 60.96 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a957da4c-b1fa-446d-80ae-d96830031838")
+	)
+	(wire
+		(pts
 			(xy 68.58 55.88) (xy 60.96 55.88)
 		)
 		(stroke
@@ -2770,16 +2923,6 @@
 			(type default)
 		)
 		(uuid "be5d5fed-3d8a-4634-856a-02fe17650571")
-	)
-	(wire
-		(pts
-			(xy 58.42 71.12) (xy 60.96 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb3d634f-3ba0-48b3-90f5-a79b9827f47f")
 	)
 	(wire
 		(pts
@@ -3200,6 +3343,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Molex"
+			(at 73.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "43650-0300"
+			(at 73.66 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 73.66 123.19 0)
 			(hide yes)
@@ -3364,6 +3531,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 185.42 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 185.42 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 185.42 59.69 0)
 			(hide yes)
@@ -3403,86 +3594,6 @@
 			(project "ASSI"
 				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
 					(reference "LED2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_Diode_AKL:1N914BWS")
-		(at 54.61 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "079fd29d-747a-4828-83bb-d67a99b9e803")
-		(property "Reference" "D2"
-			(at 54.61 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N914BWS"
-			(at 54.61 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-323F"
-			(at 54.61 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.octopart.com/1N914BWS-ON-Semiconductor-datasheet-11741836.pdf"
-			(at 54.61 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SOD-323F Diode, Small Signal, Fast Switching, 75V, 200mA, 4ns, Alternate KiCad Library"
-			(at 54.61 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "15fa5067-d771-4150-8b9c-eb99c513a9f3")
-		)
-		(pin "2"
-			(uuid "c6a17a8c-3dad-4da6-b11e-08915f6df042")
-		)
-		(instances
-			(project "ASSI"
-				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
-					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -3622,6 +3733,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 185.42 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 185.42 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 185.42 127 0)
 			(hide yes)
@@ -3711,6 +3846,30 @@
 			)
 		)
 		(property "Datasheet" "CLQ6B"
+			(at 231.14 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Manufacturer" "CreeLED"
+			(at 231.14 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
 			(at 231.14 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -3822,6 +3981,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 280.67 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 280.67 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 280.67 93.98 0)
 			(hide yes)
@@ -3889,7 +4072,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 142.24 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3899,7 +4082,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 142.24 136.398 90)
 			(hide yes)
 			(show_name no)
@@ -3911,6 +4094,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 142.24 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 142.24 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 142.24 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -3970,7 +4175,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1% 0.66W"
 			(at 132.08 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3980,7 +4185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 64.008 90)
 			(hide yes)
 			(show_name no)
@@ -3992,6 +4197,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F1001V"
 			(at 132.08 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -4108,6 +4335,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 64.77 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2084bfcb-a7c3-494c-8805-babd6df17145")
+		(property "Reference" "H3"
+			(at 67.31 146.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 67.31 148.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 64.77 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 64.77 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ASSI"
+				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 132.08 57.15 90)
 		(unit 1)
@@ -4130,7 +4433,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "300R 1% 0.66W"
 			(at 132.08 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4140,7 +4443,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 58.928 90)
 			(hide yes)
 			(show_name no)
@@ -4152,6 +4455,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F3000V"
 			(at 132.08 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -4211,7 +4536,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 142.24 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4221,7 +4546,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 142.24 103.378 90)
 			(hide yes)
 			(show_name no)
@@ -4233,6 +4558,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 142.24 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 142.24 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -4292,7 +4639,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 132.08 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4302,7 +4649,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 103.378 90)
 			(hide yes)
 			(show_name no)
@@ -4314,6 +4661,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 132.08 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -4452,7 +4821,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "300R 1% 0.66W"
 			(at 132.08 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4462,7 +4831,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 126.238 90)
 			(hide yes)
 			(show_name no)
@@ -4474,6 +4843,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F3000V"
 			(at 132.08 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -4533,7 +4924,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "300R 1% 0.66W"
 			(at 132.08 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4543,7 +4934,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 93.218 90)
 			(hide yes)
 			(show_name no)
@@ -4555,6 +4946,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F3000V"
 			(at 132.08 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -4586,6 +4999,82 @@
 			(project "ASSI"
 				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 41.91 147.32 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "49ed691a-32b5-44ed-9cb5-e814595d725b")
+		(property "Reference" "H1"
+			(at 44.45 146.0499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 44.45 148.5899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 41.91 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 41.91 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ASSI"
+				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -4637,6 +5126,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 60.96 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 60.96 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B104KBCNNNC"
 			(at 60.96 78.74 0)
 			(hide yes)
 			(show_name no)
@@ -4732,6 +5243,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Molex"
+			(at 41.91 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "43650-0300"
+			(at 41.91 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 41.91 123.19 0)
 			(hide yes)
@@ -4806,6 +5341,30 @@
 			)
 		)
 		(property "Datasheet" "CLQ6B"
+			(at 280.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Manufacturer" "CreeLED"
+			(at 280.67 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
 			(at 280.67 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -4906,6 +5465,30 @@
 			)
 		)
 		(property "Datasheet" "CLQ6B"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Manufacturer" "CreeLED"
+			(at 140.97 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
 			(at 140.97 127 0)
 			(hide yes)
 			(show_name no)
@@ -5141,7 +5724,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "300R 1% 0.66W"
 			(at 121.92 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5151,7 +5734,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 121.92 93.218 90)
 			(hide yes)
 			(show_name no)
@@ -5163,6 +5746,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 121.92 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 121.92 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F3000V"
 			(at 121.92 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5413,6 +6018,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 140.97 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 140.97 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 140.97 93.98 0)
 			(hide yes)
@@ -5592,6 +6221,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 231.14 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 231.14 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 231.14 59.69 0)
 			(hide yes)
@@ -5692,6 +6345,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 327.66 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 327.66 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 327.66 59.69 0)
 			(hide yes)
@@ -5759,7 +6436,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "300R 1% 0.66W"
 			(at 121.92 120.65 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5769,7 +6446,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 121.92 126.238 90)
 			(hide yes)
 			(show_name no)
@@ -5781,6 +6458,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 121.92 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 121.92 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F3000V"
 			(at 121.92 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -5840,7 +6539,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 132.08 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5850,7 +6549,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 136.398 90)
 			(hide yes)
 			(show_name no)
@@ -5862,6 +6561,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 132.08 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -5978,6 +6699,108 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_Diode_Schottky_AKL:PMEG4010CEH")
+		(at 54.61 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0d83c9c-ab04-4244-ba19-081c8ec894ff")
+		(property "Reference" "D1"
+			(at 54.9275 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG4010CEH"
+			(at 54.9275 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/6076ddfe18935c4c311aad91dddcf920/PMEG4010CEX-DTE.pdf"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PMEG4010CEH"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SOD-123F Schottky diode, 40V, 1A, Alternate KiCAD Library"
+			(at 54.61 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4b8ad476-1cf4-4645-afb9-81654fbecea5")
+		)
+		(pin "2"
+			(uuid "b9b6b78d-cc25-436e-8bdd-e400da835cca")
+		)
+		(instances
+			(project "ASSI"
+				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CLQ6B:CLQ6B-TKW-S1L1R1H1TBB7935BB3")
 		(at 231.14 127 0)
 		(unit 1)
@@ -6022,6 +6845,30 @@
 			)
 		)
 		(property "Datasheet" "CLQ6B"
+			(at 231.14 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Manufacturer" "CreeLED"
+			(at 231.14 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
 			(at 231.14 127 0)
 			(hide yes)
 			(show_name no)
@@ -6078,86 +6925,6 @@
 		)
 	)
 	(symbol
-		(lib_id "PCM_Diode_AKL:1N914BWS")
-		(at 54.61 71.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b971cd95-54a3-4ea3-9732-181def66b401")
-		(property "Reference" "D1"
-			(at 54.61 64.77 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N914BWS"
-			(at 54.61 67.31 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "PCM_Diode_SMD_AKL:D_SOD-323F"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://datasheet.octopart.com/1N914BWS-ON-Semiconductor-datasheet-11741836.pdf"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "SOD-323F Diode, Small Signal, Fast Switching, 75V, 200mA, 4ns, Alternate KiCad Library"
-			(at 54.61 71.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9c09cb2d-bf93-46bc-b306-c4320a43a237")
-		)
-		(pin "2"
-			(uuid "c4fa0b44-aa7e-46a1-9d55-bbdfa5b0ddf3")
-		)
-		(instances
-			(project "ASSI"
-				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CLQ6B:CLQ6B-TKW-S1L1R1H1TBB7935BB3")
 		(at 280.67 127 0)
 		(unit 1)
@@ -6202,6 +6969,30 @@
 			)
 		)
 		(property "Datasheet" "CLQ6B"
+			(at 280.67 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Manufacturer" "CreeLED"
+			(at 280.67 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
 			(at 280.67 127 0)
 			(hide yes)
 			(show_name no)
@@ -6313,6 +7104,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 185.42 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 185.42 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 185.42 93.98 0)
 			(hide yes)
@@ -6402,6 +7217,30 @@
 			)
 		)
 		(property "Datasheet" "CLQ6B"
+			(at 140.97 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Manufacturer" "CreeLED"
+			(at 140.97 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
 			(at 140.97 59.69 0)
 			(hide yes)
 			(show_name no)
@@ -6616,6 +7455,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 64.77 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ce049453-e09e-4c19-9da4-0dbdf237832d")
+		(property "Reference" "H4"
+			(at 67.31 153.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 67.31 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 64.77 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 64.77 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 64.77 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ASSI"
+				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 132.08 67.31 90)
 		(unit 1)
@@ -6638,7 +7553,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 132.08 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6648,7 +7563,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -6660,6 +7575,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 132.08 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -6719,7 +7656,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 121.92 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6729,7 +7666,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 121.92 103.378 90)
 			(hide yes)
 			(show_name no)
@@ -6741,6 +7678,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 121.92 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 121.92 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 121.92 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -6800,7 +7759,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1% 0.66W"
 			(at 132.08 125.73 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6810,7 +7769,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 131.318 90)
 			(hide yes)
 			(show_name no)
@@ -6822,6 +7781,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F1001V"
 			(at 132.08 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -6914,6 +7895,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 327.66 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 327.66 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 327.66 127 0)
 			(hide yes)
@@ -6981,7 +7986,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "1k 1% 0.66W"
 			(at 132.08 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6991,7 +7996,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 132.08 98.298 90)
 			(hide yes)
 			(show_name no)
@@ -7003,6 +8008,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 132.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 132.08 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F1001V"
 			(at 132.08 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -7119,6 +8146,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 41.91 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e530ea17-6781-4b78-aff9-2c34e2071780")
+		(property "Reference" "H2"
+			(at 44.45 153.6699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 44.45 156.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 41.91 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 41.91 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "ASSI"
+				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 121.92 57.15 90)
 		(unit 1)
@@ -7141,7 +8244,7 @@
 				)
 			)
 		)
-		(property "Value" "300"
+		(property "Value" "300R 1% 0.66W"
 			(at 121.92 53.34 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7151,7 +8254,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 121.92 58.928 90)
 			(hide yes)
 			(show_name no)
@@ -7163,6 +8266,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 121.92 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 121.92 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F3000V"
 			(at 121.92 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7222,7 +8347,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 121.92 130.81 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7232,7 +8357,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 121.92 136.398 90)
 			(hide yes)
 			(show_name no)
@@ -7244,6 +8369,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 121.92 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 121.92 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 121.92 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -7326,6 +8473,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 60.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Samsung Electro-Mechanics"
+			(at 60.96 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CL21B104KBCNNNC"
 			(at 60.96 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -7464,7 +8633,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 121.92 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7474,7 +8643,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 121.92 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -7486,6 +8655,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 121.92 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 121.92 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 121.92 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7624,7 +8815,7 @@
 				)
 			)
 		)
-		(property "Value" "43"
+		(property "Value" "47R 1% 0.66W"
 			(at 142.24 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7634,7 +8825,7 @@
 				)
 			)
 		)
-		(property "Footprint" "PCM_Resistor_SMD_AKL:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 142.24 69.088 90)
 			(hide yes)
 			(show_name no)
@@ -7646,6 +8837,28 @@
 			)
 		)
 		(property "Datasheet" ""
+			(at 142.24 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 142.24 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ERJ-P08F47R0V"
 			(at 142.24 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -7738,6 +8951,30 @@
 				)
 			)
 		)
+		(property "Manufacturer" "CreeLED"
+			(at 327.66 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "MPN" "CLQ6B-TKW-S1L1R1H1TBB7935BB3"
+			(at 327.66 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
 		(property "Description" ""
 			(at 327.66 93.98 0)
 			(hide yes)
@@ -7777,6 +9014,108 @@
 			(project "ASSI"
 				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
 					(reference "LED10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_Diode_Schottky_AKL:PMEG4010CEH")
+		(at 54.61 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fd11e639-53a2-49db-8f77-133fa2e30db6")
+		(property "Reference" "D2"
+			(at 54.9275 49.53 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PMEG4010CEH"
+			(at 54.9275 52.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-123F"
+			(at 54.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.tme.eu/Document/6076ddfe18935c4c311aad91dddcf920/PMEG4010CEX-DTE.pdf"
+			(at 54.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Nexperia"
+			(at 54.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "PMEG4010CEH"
+			(at 54.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "SOD-123F Schottky diode, 40V, 1A, Alternate KiCAD Library"
+			(at 54.61 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01fb8abb-5e90-49a1-810b-e15b1ec65d8c")
+		)
+		(pin "2"
+			(uuid "0a47cb5e-3e23-419e-86f9-d3f6588e809f")
+		)
+		(instances
+			(project "ASSI"
+				(path "/c3733432-f211-41e3-847d-9aab11a762cb"
+					(reference "D2")
 					(unit 1)
 				)
 			)

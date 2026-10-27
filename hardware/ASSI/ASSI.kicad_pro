@@ -511,6 +511,24 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.2,
+        "name": "LED",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "tuning_profile": ""
+      },
+      {
+        "clearance": 0.2,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.8,
+        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -518,7 +536,32 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "24V_YW"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "24V_BL"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/G"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "/B"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "LED",
+        "pattern": "Net-(LED*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
@@ -661,7 +704,7 @@
         "uuid": "c3733432-f211-41e3-847d-9aab11a762cb"
       }
     ],
-    "used_designators": "C1-4,LED1-15,#PWR1-16,D1-3,J1-3,R1-18,TP1-3,IN1,OUT1",
+    "used_designators": "C1-4,LED1-15,#PWR1-16,D1-3,J1-3,R1-18,TP1-3,IN1,OUT1,CR1-2,H1-4",
     "variants": []
   },
   "sheets": [
