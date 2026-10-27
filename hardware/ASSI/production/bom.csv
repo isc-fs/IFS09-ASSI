@@ -1,0 +1,8 @@
+"Reference","Value","Footprint","Manufacturer","MPN","Qty"
+"C3,C4","100nF","Capacitor_SMD:C_0805_2012Metric","Samsung Electro-Mechanics","CL21B104KBCNNNC","2"
+"D1,D2","PMEG4010CEH","Diode_SMD:D_SOD-123F","Nexperia","PMEG4010CEH","2"
+"IN1,OUT1","436500300","ISC_conectores:CONN_SD-43650-001_03_MOL","Molex","43650-0300","2"
+"LED1-LED15","CLQ6B","ISC_modulos_pcb:SMT_B7935BB3_WFS","CreeLED","CLQ6B-TKW-S1L1R1H1TBB7935BB3","15"
+"R1,R2,R7,R9,R13,R15","300R 1% 0.66W","Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder","Panasonic","ERJ-P08F3000V","6"
+"R3,R10,R16","1k 1% 0.66W","Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder","Panasonic","ERJ-P08F1001V","3"
+"R4-R6,R8,R11,R12,R14,R17,R18","47R 1% 0.66W","Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder","Panasonic","ERJ-P08F47R0V","9"
